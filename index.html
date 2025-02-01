@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;900&family=Lato:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="rows">
+                <div class="child bordertop borderleft" id="1" onclick="play(this.id)"></div>
+                <div class="child bordertop" id="2" onclick="play(this.id)"></div>
+                <div class="child bordertop borderright" id="3" onclick="play(this.id)"></div>
+                <div class="child borderleft" id="4" onclick="play(this.id)"></div>
+                <div class="child" id="5" onclick="play(this.id)"></div>
+                <div class="child borderright" id="6" onclick="play(this.id)"></div>
+                <div class="child borderleft borderbottom" id="7" onclick="play(this.id)"></div>
+                <div class="child borderbottom" id="8" onclick="play(this.id)"></div>
+                <div class="child borderright borderbottom" id="9" onclick="play(this.id)"></div>
+            </div>
+            <div id="message"></div>
+            <a href="index.html"><button id="reset" type="reset">RESTART</button></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

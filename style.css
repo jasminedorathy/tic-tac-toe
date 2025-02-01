@@ -1,0 +1,117 @@
+/* General Styles */
+
+body {
+    font-family: 'Handjet', cursive;
+    background-image: url("abstract-colorful-geometric-shape-background-modern-color-background-for-your-website-vector.jpg");
+    /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.box {
+    display: inline-block;
+    background-color: rgba(44, 44, 44, 0.9);
+    /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.rows {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.child {
+    background-color: rgba(68, 68, 68, 0.8);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 10px;
+}
+
+.child:hover {
+    background-color: rgba(85, 85, 85, 0.9);
+    transform: scale(1.05);
+}
+
+.bordertop {
+    border-top: 2px solid #ffffff;
+}
+
+.borderbottom {
+    border-bottom: 2px solid #ffffff;
+}
+
+.borderleft {
+    border-left: 2px solid #ffffff;
+}
+
+.borderright {
+    border-right: 2px solid #ffffff;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Handjet', cursive;
+    font-weight: bold;
+}
+
+#reset:hover {
+    background-color: #e6b800;
+    transform: scale(1.1);
+}
+
+
+/* Animation for winning message */
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #ffcc00;
+    }
+    50% {
+        text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    }
+    100% {
+        text-shadow: 0 0 10px #ffcc00;
+    }
+}
+
+.winning-message {
+    animation: glow 1.5s infinite;
+}
